@@ -2,8 +2,22 @@ body {
     background-color: rgb(249, 248, 244);
 }
 
-th, td {
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
     border: 1px solid black;
+}
+
+td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-width: thin;
+    text-align: center;
+    
 }
 
 
