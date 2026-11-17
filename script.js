@@ -7,20 +7,20 @@ const habits = [
 const gridBody = document.getElementById("grid-body");
 
 function render() {
-    gridBody.textContent = "";
 
-    habits.forEach(habit =>  {
-        const row = document.createElement("tr");
+    const tr = document.createElement("tr");
+    
+    for (let i = 0; i < 9; i++) {
 
         const td = document.createElement("td");
-        td.textContent = habits.name;
 
-        for (let day = 1; day < 7; day++) {
-            
-        }
+        tr.appendChild(td);
+    }
 
-        gridBody.appendChild(row);
-    });
-};
+    gridBody.appendChild(tr);
+
+}
+
+
 
 render();
